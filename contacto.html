@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página de Xiao</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+    <h1 class="titulo">China</h1>
+    <img class="logo-header" src="img/Flag_of_the_People's_Republic_of_China.svg.png" alt="China flag" style="width:200px;height:auto;">
+    <header>
+        <h1 class="titulo">Navegador</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="lugares.html">Lugares</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="form-section">
+        <form action="destino.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="motivo">Motivo de contacto:</label>
+            <select id="motivo" name="motivo">
+                <option value="consulta">Consulta</option>
+                <option value="sugerencia">Sugerencia</option>
+                <option value="otro">otro</option>
+            </select>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje"></textarea>
+            <input type="submit" value="Enviar"> 
+        </form>
+    </section>
+    <footer class="contact-footer">
+        <p class="pf"><em>Derechos reservados - Xiao</em></p>
+    </footer>
+</body>
+</html>
